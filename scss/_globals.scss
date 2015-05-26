@@ -1,0 +1,79 @@
+/* Globals.scss */
+
+// @import url(http://fonts.googleapis.com/css?family=Titillium+Web:300,900);
+//@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:400,700,300,300italic);
+
+$color: #262626;
+$background-color: transparent;
+$base-font-size: 22px;
+$logo-color: #6e6e6e;
+$line-height: 1.45;
+
+@function em($px, $base: $base-font-size) {
+    @return($px / $base) * 1em;
+}
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: thin;
+  font-weight: 300;
+  src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z0ZRWJQ0UjzR2Uv6RollX_g.woff2) format('woff2'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z2B7wJ9CoPCp9n30ZBThZ1I.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans','verdana','helvetica';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5hampu5_7CjHW5spxoeN3Vs.woff2) format('woff2'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5qRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans','verdana','helvetica';
+  font-style: bold;
+  font-weight: 700;
+  src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z8hHwsiXhsDb0smKjAA7Bek.woff2) format('woff2'), url(http://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zxAPw1J91axKNXP_-QX9CC8.woff) format('woff');
+}
+@font-face {
+  font-family: 'Josefin Sans','verdana','helvetica';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Josefin Sans Light Italic'), local('JosefinSans-LightItalic'), url(http://fonts.gstatic.com/s/josefinsans/v9/ppse0J9fKSaoxCIIJb33Gx0ue0Sk5cwvYx5tGiUAApw.woff2) format('woff2'), url(http://fonts.gstatic.com/s/josefinsans/v9/ppse0J9fKSaoxCIIJb33G6G6KSkCb3wBFlS6Qx4Mm8U.woff) format('woff');
+}
+
+//@font-face {
+//    font-family: 'titilliumblack';
+//    src: url('../webfonts/Titillium/Titillium-Black-webfont.eot');
+//    src: url('../webfonts/Titillium/Titillium-Black-webfont.eot?#iefix') format('embedded-opentype'),
+//         url('../webfonts/Titillium/Titillium-Black-webfont.woff2') format('woff2'),
+//         url('../webfonts/Titillium/Titillium-Black-webfont.woff') format('woff'),
+//         url('../webfonts/Titillium/Titillium-Black-webfont.ttf') format('truetype'),
+//         url('../webfonts/Titillium/Titillium-Black-webfont.svg#titilliumblack') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+//
+//@font-face {
+//    font-family: 'titilliumlight';
+//    src: url('../webfonts/Titillium/Titillium-Light-webfont.eot');
+//    src: url('../webfonts/Titillium/Titillium-Light-webfont.eot?#iefix') format('embedded-opentype'),
+//         url('../webfonts/Titillium/Titillium-Light-webfont.woff2') format('woff2'),
+//         url('../webfonts/Titillium/Titillium-Light-webfont.woff') format('woff'),
+//         url('../webfonts/Titillium/Titillium-Light-webfont.ttf') format('truetype'),
+//         url('../webfonts/Titillium/Titillium-Light-webfont.svg#titilliumlight') format('svg');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+
+@mixin body-font-light {
+    font-family: 'Josefin Sans Light', 'helvetica', 'verdana', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin headline-font {
+    font-family: 'Josefin Sans', 'helvetica', 'verdana', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin body-font-bold {
+    font-family: 'Josefin Sans Bold', 'helvetica', 'verdana', sans-serif;
+    font-weight: bold;
+    font-style: bold;
+}

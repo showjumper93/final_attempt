@@ -1,0 +1,147 @@
+/* Module.scss */
+
+nav[role="navigation"] ul {
+    background-color: #39c9a8;
+    list-style-type: none;
+    margin: 0 40px 0 0;
+    padding: 0 8px 4px 8px;
+    @media screen and (min-width: 1024px) {
+        max-width: 100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+nav[role="navigation"] ul li {
+    display: inline-block;
+    margin: 0 0 0 25px;
+    padding: 100;
+}
+
+nav[role="navigation"] a {
+    color: #fff;
+    font-size: 20px;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,40%);
+        transition: color 300ms linear;
+    }
+}
+
+header[role="banner"] svg {
+    fill: $color;
+    @media screen and (min-width: 1024px) {
+        margin: 0;
+
+    }
+}
+
+main[role="main"] {
+    list-style-type: inherit;
+//    box-sizing: border-box;
+    padding: 0 200px;
+
+}
+
+.place-mark {
+    fill: $logo-color;
+}
+
+//.cafe h1 svg, .food h1 svg, 
+//.attractions h1 svg {
+//    height: em(5px);
+//    fill: $color;
+//    margin-right: em(6px);
+//}
+
+.aboutme h1, .graphics h1, .sculptures h1, .paintingsdrawings h1,
+.aboutme h2, .graphics h2, .sculptures h2, .paintingsdrawings h2 {
+    font-size: em(40px);
+}
+
+.aboutme h1 a, .graphics h1 a, .sculptures h1 a, .paintingsdrawings h1 a,
+.aboutme h2 a, .graphics h2 a, .sculptures h2 a, .paintingsdrawings h2 a {
+    color: $logo-color;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken($logo-color,8%);
+        transition: color 300ms linear;
+    }
+}
+
+.aboutme-location, .graphics-location, .sculptures-location, .paintingsdrawings-location, {
+    margin-bottom: em(100px);
+    &:last-of-type {
+        margin-bottom: 50;
+    }
+}
+
+//.cafe-location:last-of-type, .food-location:last-of-type, 
+//.attraction-location:last-of-type {
+//    margin-bottom: 0;
+//}
+
+.street-address:before {
+    content: "a. ";
+    @include headline-font;
+}
+
+abbr[title] {
+    border-bottom: none;
+}
+
+.tel {
+    display: block;
+    border-image-width: 40%;
+    &:before {
+        content: "*";
+        @include headline-font;
+    }
+}
+    
+footer[role="contentinfo"] {
+    background-color: #39c9a8;
+    color: #fff;
+    font-size: 15px;
+    padding: 20px;
+}
+
+footer[role="contentinfo"] h2 {
+    margin: 0;
+}
+
+footer[role="contentinfo"] ul + h2 {
+    margin-top: em(22px);
+}
+
+footer[role="contentinfo"] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] ul li {
+    display: block;
+    margin: 0 4px 0 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] a {
+    color: #fff;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,30%);
+        transition: color 300ms linear;  
+    }
+}
+
+.loading-icon {
+    max-width: 100px;
+    width: 100%;
+}
+
+p[data-lazy-load] {
+    text-align: center;
+}
+    
+    
